@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 150px;
+    padding-top: 20px;
+}
+
+h1{
+    margin: 0 auto;
+    text-align: center;
+    font-family: serif;
+    font: small-caps bold 70px/1 serif;
+}
+
+.rouge{
+    text-decoration: none;
+    color: red;
+}
+
+.blanc{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    width: 30%;
+    min-width: 150px;
+    margin: 12px auto 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    color :white;
+    font: small-caps bold 30px/1 serif;
+}
+
+body{
+    background-image: url("../images/fond.jpg");
+    background-repeat: no-repeat;
+    background-color: black ;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div{
+    width: 464px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+article{
+    max-width: 800px;
+    /* height: 600px; */
+    padding: 0 15px;
+    text-align :center;
+}
+
+.wrapper{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 0;
+}
+
+.concert{
+    color :white;
+    font: small-caps bold 30px/1 serif;
+}
+
+.conc{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    margin: 0 auto;
+    text-align: center;
+    font-family: serif;
+    font: small-caps bold 60px/1 serif;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .wrapper {
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+    }
+
+    ul {
+        width: 60%;
+    }
+}

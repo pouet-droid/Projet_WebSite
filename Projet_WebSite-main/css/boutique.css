@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 150px;
+    padding-top: 20px;
+}
+
+h1{
+    margin: 0 auto;
+    text-align: center;
+    font-family: serif;
+    font: small-caps bold 70px/1 serif;
+}
+
+.rouge{
+    text-decoration: none;
+    color: red;
+}
+
+.blanc{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    width: 30%;
+    min-width: 150px;
+    margin: 12px auto 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    color :white;
+    font: small-caps bold 30px/1 serif;
+}
+
+body{
+    background-image: url("../images/fond.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div{
+    width: 464px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+article{
+    width: 50%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: minmax(300px, auto);
+    display: grid;
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+
+    position: relative;
+
+}
+
+.card img{
+    width: 200px;
+    height: 300px;
+
+}
+
+.card-desc {
+    display: block;
+    font-size: 1.2rem;
+    position: absolute;
+    width: 100%;
+    /* height: 0; */
+    top: 0;
+    opacity: 0;
+    padding: 18px 8%;
+    background-color: white;
+    border-radius: 25px;
+    transition: 0.8s ease;
+  }
+
+  .card:hover .card-desc {
+    opacity: 1;
+    height: 100%;
+  }
+
+
+
+.wrapper{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 0;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+    }
+
+    ul {
+        width: 50%;
+    }
+}
